@@ -1,6 +1,5 @@
 import './App.css';
 import {useState} from 'react';
-import * as events from "events";
 
 function Header(props){
     return <header>
