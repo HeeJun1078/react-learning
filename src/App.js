@@ -1,4 +1,3 @@
-import  logo from './logo.svg';
 import './App.css';
 import {useState} from 'react';
 
@@ -48,7 +47,7 @@ function App() {
     let title, body = null;
     for(let i=0; i<topics.length; i++){
 
-        if(topics[i].id == id){
+        if(topics[i].id === id){
             title = topics[i].title;
             body = topics[i].body;
         }
@@ -57,7 +56,7 @@ function App() {
   }
   return (
     <div>
-      <Header title="WEB" onChangeMode={()=>{
+      <Header title="WEB SITE" onChangeMode={()=>{
         setMode('WELCOME');
       }}></Header>
       <Nav topics={topics} onChangMode={(_id)=>{
